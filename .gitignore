@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Testes e ferramentas
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Segredos e configurações locais
+.env
+.streamlit/secrets.toml
+
+# Banco de dados e arquivos de scan gerados/localmente armazenados
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+data/scans/*
+!data/scans/.gitkeep
+data/reports/*
+!data/reports/.gitkeep
+data/graphs/*
+!data/graphs/.gitkeep

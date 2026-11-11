@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scanme-analyzer"
+version = "0.1.0"
+description = "Analisador de exports XML do Nmap com relatórios de risco."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "defusedxml>=0.7.1",
+    "pandas>=2.2",
+    "streamlit>=1.40",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
